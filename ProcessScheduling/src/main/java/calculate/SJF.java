@@ -44,11 +44,6 @@ public class SJF {
                 else return -1;
             }else return -1;
         });
-//        for (Process process : processList){
-//            System.out.println(process);
-//        }
-//        System.out.println();
-
         List<Process> processListClone = new LinkedList<>();
 
         processListClone.add(processList.get(0));
@@ -70,11 +65,6 @@ public class SJF {
             }
             //排序
             Collections.sort(processListTemp, (o1, o2) -> o1.getServiceTime() >= o2.getServiceTime() ? 1 : -1);
-
-//            for (Process process : processListTemp){
-//                System.out.println(process);
-//            }
-//            System.out.println();
 
             //获得第一，加入clone，processList 弹出
             processListClone.add(processListTemp.get(0));

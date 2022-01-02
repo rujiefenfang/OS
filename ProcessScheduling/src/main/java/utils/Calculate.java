@@ -25,6 +25,8 @@ public class Calculate {
     public static double averageWeightedTurnaroundTime = 0;
 
     public static List<Process> calculate(List<Process> processList) {
+        averageTurnaroundTime = 0;
+        averageWeightedTurnaroundTime = 0;
 
         DecimalFormat df = new DecimalFormat("#.00");
 

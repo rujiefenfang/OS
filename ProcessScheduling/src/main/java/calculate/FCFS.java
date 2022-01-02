@@ -40,7 +40,7 @@ public class FCFS {
     public List<Process> calculate() {
 
         // 按到达时间排序
-        Collections.sort(processList,(o1, o2) -> o1.getArrivalTime() >= o2.getArrivalTime() ? 1:-1);
+        Collections.sort(processList, (o1, o2) -> o1.getArrivalTime() >= o2.getArrivalTime() ? 1:-1);
 
 //        DecimalFormat df = new DecimalFormat("#.00");
 //
